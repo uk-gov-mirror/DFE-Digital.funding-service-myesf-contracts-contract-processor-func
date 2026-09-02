@@ -115,9 +115,6 @@ namespace Pds.Contracts.ContractEventProcessor.Services.Implementations
                 case ContractFundingType.Levy:
                     return $"Apprenticeship agreement {DateTime.Now.ToFullMonthAndFullYearDisplay()} version {contractEvent.ContractVersion}";
 
-                case ContractFundingType.Ncs:
-                    return $"{fundingTypeName} contract {variation}for {contractPeriod} version {contractEvent.ContractVersion}";
-
                 case ContractFundingType.NonLevy:
                     return $"{OrganizationNameAbbreviated} apprenticeship contract for {contractPeriod} version {contractEvent.ContractVersion}";
 
@@ -147,6 +144,7 @@ namespace Pds.Contracts.ContractEventProcessor.Services.Implementations
                 case ContractFundingType.FurtherEducationConditionAllocation:
                     return $"{fundingTypeName} {variation}for {contractPeriod} version {contractEvent.ContractVersion}";
 
+                case ContractFundingType.Ncs:
                 case ContractFundingType.AdultEducationBudgetContractForService:
                 case ContractFundingType.HigherTechnicalEducation:
                 case ContractFundingType.SkillsAcceleratorDevelopment:
@@ -155,6 +153,7 @@ namespace Pds.Contracts.ContractEventProcessor.Services.Implementations
                 case ContractFundingType.TakingTeachingFurther:
                 case ContractFundingType.TakingTeachingFurtherYear2:
                 case ContractFundingType.ConstructionSkillsPackageIndustryPlacementsFund:
+                case ContractFundingType.TakingTeachingFurtherRound9:
                     return $"{fundingTypeName} contract {variation}for {contractPeriod} version {contractEvent.ContractVersion}";
                 case ContractFundingType.SkillsBootcamps:
                 case ContractFundingType.SkillsBootcampsDPS:

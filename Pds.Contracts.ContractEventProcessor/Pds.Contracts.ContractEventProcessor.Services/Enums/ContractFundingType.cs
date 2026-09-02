@@ -242,6 +242,7 @@ namespace Pds.Contracts.ContractEventProcessor.Services.Enums
 
         /// <summary>
         /// Taking teaching further.
+        /// Used for 2024-25 Cohort Year 1 and 2025-26 Cohort Year 1
         /// </summary>
         [Display(Name = "Taking teaching further", Description = "Taking teaching further", ShortName = "TTF")]
         TakingTeachingFurther = 38,
@@ -255,6 +256,7 @@ namespace Pds.Contracts.ContractEventProcessor.Services.Enums
 
         /// <summary>
         /// Taking teaching further year 2.
+        /// Used for 2024-25 Cohort Year 2 and 2025-26 Cohort Year 2.
         /// </summary>
         [Display(Name = "Taking teaching further", Description = "Taking teaching further", ShortName = "TTFY2")]
         TakingTeachingFurtherYear2 = 40,
@@ -276,6 +278,13 @@ namespace Pds.Contracts.ContractEventProcessor.Services.Enums
         /// Shares AEB2023 funding type from FCS with ESFA Adult Education Budget (procured from Aug 2023).
         /// </summary>
         [Display(Name = "DWP Adult Skills Fund", Description = "DWP Adult Skills Fund", ShortName = "AEB2023")]
-        DWPAdultSkillsFund = 43
+        DWPAdultSkillsFund = 43,
+
+        /// <summary>
+        /// Taking teaching further year 2026-2027 cohort - Round 9.
+        /// Used for 2026-27 Cohort, Year 1.
+        /// </summary>
+        [Display(Name = "Taking teaching further", Description = "Taking teaching further", ShortName = "TTFR9")]
+        TakingTeachingFurtherRound9 = 44,
     }
 }
